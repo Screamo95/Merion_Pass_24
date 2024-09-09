@@ -24,7 +24,7 @@
     max-width: 912px;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .global__container {
     max-width: 610px;
   }
@@ -37,9 +37,11 @@
 
 /* Header */
 .header {
+  background-color: #E4E4E4;
 }
 .header__top {
   box-shadow: 0 4px 20px 0 rgba(31, 31, 31, 0.06);
+  background-color: #fff;
 }
 .header__top_body {
   display: flex;
@@ -317,7 +319,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .burger__open {
     display: block;
   }
@@ -334,5 +336,342 @@
   }
   .header__sign {
     margin-bottom: 30px;
+  }
+}
+
+/* About */
+.about {
+  padding-top: 115px;
+  background-color: #E4E4E4;
+}
+.about-title {
+  font-family: var(--benzin);
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  margin-bottom: 30px;
+}
+.about-subtitle {
+  font-family: var(--mont_regular);
+  font-size: 24px;
+  line-height: 160%;
+  color: #1f1f1f;
+  margin-bottom: 10px;
+  max-width: 1000px;
+}
+.about__content {
+  position: relative;
+  display: flex;
+  align-items: end;
+  height: 302px;
+  margin-bottom: 120px;
+}
+.about__inner {
+  border-radius: 56px;
+  padding: 48px 0px 0px 64px;
+  width: 1312px;
+  height: 249px;
+  background: #b6d3ff;
+}
+.about__inner-txt {
+  max-width: 663px;
+  font-family: var(--mont_medium);
+  font-size: 32px;
+  line-height: 160%;
+  color: #1f1f1f;
+}
+.about__content-img {
+  position: absolute;
+  top: 0;
+  left: 807px;
+  width: 398px;
+  height: 302px;
+  background-image: url(../img/about_woman.png);
+  background-repeat: no-repeat;
+}
+.about__items {
+  display: flex;
+  justify-content: space-between;
+}
+.about__item {
+  border-radius: 56px;
+  padding: 40px;
+  padding-top: 35px;
+  width: 424px;
+  height: 284px;
+  background: #fff;
+}
+.about__item-name {
+  font-family: var(--benzin);
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.about__card {
+  margin-bottom: 23px;
+}
+.about__card-price {
+  font-family: var(--mont_bold);
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 4px;
+}
+.about__card-txt {
+  font-family: var(--mont_regular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+.about__item_1 {
+  color: rgba(31, 31, 31, 0.7);
+}
+.about__item_1 .about__card-txt {
+  color: #1f1f1f;
+}
+.about__item_2 {
+  color: #163da8;
+}
+.about__item_2 .about__card-txt {
+  color: #1f1f1f;
+}
+.about__item_3 {
+  color: #fff;
+  background: #163da8;
+}
+.about__item_3 .about__card-txt {
+  color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+  .about__content-img {
+    left: 760px;
+    width: 388px;
+    background-image: url(../img/about_woman_1400.png);
+  }
+  .about__item_1 {
+    width: 322px;
+    height: 284px;
+  }
+  .about__item_3 {
+    width: 326px;
+    height: 284px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__inner-txt {
+    max-width: 461px;
+    font-size: 26px;
+  }
+  .about__content-img {
+    left: 560px;
+    width: 388px;
+    background-image: url(../img/about_woman_1400.png);
+  }
+  .about__inner {
+    padding: 42px 0px 0px 64px;
+  }
+  .about__item_1 {
+    padding: 32px;
+    width: 283px;
+    height: 358px;
+  }
+  .about__item_1 .about__item-name {
+    margin-bottom: 73px;
+  }
+  .about__item_1 .about__card {
+    margin-bottom: 50px;
+  }
+  .about__item_2 {
+    padding: 32px;
+    width: 312px;
+    height: 358px;
+  }
+  .about__item_2 .about__card {
+    margin-bottom: 25px;
+    max-width: 200px;
+  }
+  .about__item_3 {
+    padding: 32px;
+    width: 269px;
+    height: 358px;
+  }
+  .about__item_3 .about__card {
+    margin-bottom: 50px;
+  }
+  .about__item_3 .about__item-name {
+    word-break: break-all;
+    max-width: 150px;
+  }
+  .about__content {
+    margin-bottom: 79px;
+  }
+  .about__item {
+    padding-top: 28px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    padding-top: 75px;
+  }
+  .about-title {
+    font-size: 40px;
+    max-width: 500px;
+    margin-bottom: 29px;
+  }
+  .about-subtitle {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .about__inner-txt {
+    max-width: 280px;
+    font-size: 20px;
+  }
+  .about__content-img {
+    left: 345px;
+    width: 265px;
+    height: 249px;
+    background-image: url(../img/about_woman_786.png);
+  }
+  .about__inner {
+    border-radius: 32px;
+    padding: 32px 0px 0px 32px;
+    width: 610px;
+    height: 228px;
+  }
+  .about__content {
+    height: 250px;
+    margin-bottom: 80px;
+  }
+  .about__item_1 {
+    border-radius: 32px;
+    padding: 24px;
+    width: 188px;
+    height: 285px;
+  }
+  .about__item_2 {
+    border-radius: 32px;
+    padding: 24px;
+    width: 188px;
+    height: 285px;
+  }
+  .about__item_3 {
+    border-radius: 32px;
+    padding: 24px;
+    width: 202px;
+    height: 285px;
+  }
+  .about__item-name {
+    font-size: 20px;
+  }
+  .about__card-price {
+    font-size: 16px;
+  }
+  .about__card-txt {
+    font-size: 12px;
+  }
+  .about__item {
+    padding-top: 22px;
+  }
+  .about__item_1 .about__item-name {
+    margin-bottom: 50px;
+  }
+  .about__item_1 .about__card {
+    margin-bottom: 42px;
+  }
+  .about__item_2 .about__item-name {
+    margin-bottom: 26px;
+  }
+  .about__item_2 .about__card {
+    margin-bottom: 23px;
+  }
+  .about__item_3 .about__card {
+    margin-bottom: 42px;
+  }
+  .about__item_3 .about__item-name {
+    word-break: break-all;
+    max-width: 160px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .about {
+    padding-top: 45px;
+  }
+  .about-title {
+    font-size: 24px;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  .about-subtitle {
+    font-size: 16px;
+    margin-bottom: 41px;
+  }
+  .about__content {
+    height: 336px;
+    margin-bottom: 48px;
+  }
+  .about__inner {
+    border-radius: 32px;
+    padding-top: 24px;
+    width: 328px;
+    height: 336px;
+    padding-left: 24px;
+  }
+  .about__inner-txt {
+    font-size: 16px;
+    max-width: 220px;
+  }
+  .about__content-img {
+    top: 163px;
+    left: 86px;
+    background-image: url(../img/about_woman_424.png);
+  }
+  .about__items {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .about__item_1 {
+    width: 328px;
+    height: 155px;
+  }
+  .about__item_2 {
+    width: 328px;
+    height: 155px;
+  }
+  .about__item_3 {
+    width: 328px;
+    height: 136px;
+  }
+  .about__cards {
+    display: flex;
+    justify-content: start;
+  }
+  .about__card {
+    margin-right: 25px;
+  }
+  .about__item-name {
+    font-size: 18px;
+  }
+  .about__item_1 .about__item-name {
+    margin-bottom: 26px;
+  }
+  .about__item_1 .about__card {
+    margin-bottom: 42px;
+    max-width: 95px;
+    margin-right: 28px;
+  }
+  .about__item_2 .about__card {
+    margin-bottom: 23px;
+    margin-right: 3px;
+    max-width: 500px;
+  }
+  .about__item_3 .about__card {
+    width: 99px;
+  }
+  .about__item_3 .about__item-name {
+    margin-bottom: 26px;
+    margin-right: 0px;
   }
 }
