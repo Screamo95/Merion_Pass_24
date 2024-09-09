@@ -1,0 +1,20 @@
+@font-face {
+  font-family: mont_regular;
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: mont_medium;
+  src: url(../fonts/Montserrat-Medium.woff);
+}
+@font-face {
+  font-family: mont_bold;
+  src: url(../fonts/Montserrat-Bold.woff);
+}
+@font-face {
+  font-family: nunito;
+  src: url(../fonts/NunitoSans_10pt-Light.woff);
+}
+@font-face {
+  font-family: benzin;
+  src: url(../fonts/benzin-semibold.woff);
+}

@@ -1,0 +1,11 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --mont_regular: mont_regular;
+  --mont_medium: mont_medium;
+  --mont_bold: mont_bold;
+  --nunito: nunito;
+  --benzin: benzin;
+}
