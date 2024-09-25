@@ -55,3 +55,10 @@ closeProgram.onclick = function() {
   setTimeout("blockProgramTable.classList.add(`program__visible`)", 1000)
   setTimeout("blockProgramMobile.classList.add(`program__visible`)", 1000)
 }
+
+// Ввод данных в форме
+
+var cleave = new Cleave('.contact__form-tel', {
+  phone: true,
+  phoneRegionCode: 'ru'
+});
