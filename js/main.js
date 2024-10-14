@@ -62,3 +62,29 @@ var cleave = new Cleave('.contact__form-tel', {
   phone: true,
   phoneRegionCode: 'ru'
 });
+
+// Развернуть меню в футере на мобильной версии
+
+document.querySelector(`.footer__item-arrow-1`).onclick = function() {
+  document.querySelector(`.footer__item-arrow-1`).classList.toggle(`footer__item-close`)
+  document.querySelector(`.footer__item-line_1`).classList.toggle(`footer__item-line_transform`)
+  document.querySelector(`.footer__menu_1`).classList.toggle(`footer__menu-close`)
+}
+
+document.querySelector(`.footer__item-arrow-2`).onclick = function() {
+  document.querySelector(`.footer__item-arrow-2`).classList.toggle(`footer__item-close`)
+  document.querySelector(`.footer__item-line_2`).classList.toggle(`footer__item-line_transform`)
+  document.querySelector(`.footer__menu_2`).classList.toggle(`footer__menu-close`)
+}
+
+document.querySelector(`.footer__item-arrow-3`).onclick = function() {
+  document.querySelector(`.footer__item-arrow-3`).classList.toggle(`footer__item-close`)
+  document.querySelector(`.footer__item-line_3`).classList.toggle(`footer__item-line_transform`)
+  document.querySelector(`.footer__menu_3`).classList.toggle(`footer__menu-close`)
+}
+
+document.querySelector(`.footer__item-arrow-4`).onclick = function() {
+  document.querySelector(`.footer__item-arrow-4`).classList.toggle(`footer__item-close`)
+  document.querySelector(`.footer__item-line_4`).classList.toggle(`footer__item-line_transform`)
+  document.querySelector(`.footer__menu_4`).classList.toggle(`footer__menu-close`)
+}
